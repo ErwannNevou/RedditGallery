@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+body{
+  background-color: white;
+}
+
+h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+}
+
+input{
+  line-height: 28px;
+}
+
+.button {
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 70%;
+  padding: 2px 4px 2px 4px;
+  border: solid black 1px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 0em;
+}
+
+.BoutonsCategories .selectionne{
+  background: #3498db;
+  color: #ffffff;
+}
+
+.choixTaille .selectionne{
+  background: green;
+  color: #ffffff;
+}
+
+.titreForm{
+  padding : 1em;
+  height: 5em;
+  text-align: center;
+}
+
+.titreForm .button{
+  font-size: 100%;
+}
+
+.form{
+  float: right;
+  margin-top: 1em;
+  vertical-align: middle;
+}
+
+.selectionCategories, .choixTaille{
+  background-color: #F0F0F0;
+  height: 1.5em;
+  border-top: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.entete{
+  background-color: #CEE3F8;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.contenu{
+  margin-top: 1%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.contenu a{
+  color: white;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.recherche{
+  height: 1.5em;
+}
+
+.image{
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0.2%;
+}
+
+.image img{
+  height : 99%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.nomImage{
+  background-image: -webkit-linear-gradient(bottom, transparent, black);
+  background-image:    -moz-linear-gradient(bottom, transparent, black);
+  background-image:      -o-linear-gradient(bottom, transparent, black);
+  background-image:         linear-gradient(bottom, transparent, black);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 5;
+  width: 250px;
+  height: 250px;
+  -moz-animation:    cacherLegende 0.5s linear forwards;
+  -webkit-animation: cacherLegende 0.5s forwards; /* Chrome, Safari, Opera */
+  animation: cacherLegende 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes cacherLegende {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.nomImage:hover{
+  -moz-animation:    afficherLegende 0.5s linear forwards;
+  -webkit-animation: afficherLegende 0.5s forwards; /* Chrome, Safari, Opera */
+  animation: afficherLegende 0.5s forwards;
+}
+
+@keyframes afficherLegende {
+    0% {opacity: 0;}
+    100% {opacity:1;}
+}
+
+.medium{
+  width: 150px;
+  height: 150px;
+}
+
+.big{
+  width: 250px;
+  height: 250px;
+  font-size: 100%;
+}
+
+.small{
+  width: 75px;
+  height: 75px;
+  font-size: 75%;
+}
